@@ -7,7 +7,7 @@ export const City = () => {
   const currentDayForecast = forecastData?.forecast && forecastData.forecast.forecastday[0].day;
 
   return (
-    <main className="">
+    <main className="flex justify-center">
       {isLoading ? (
         <p>Loading...</p>
       ) : error ? (
