@@ -2,10 +2,12 @@ import { useForecastData } from '../hooks/';
 
 export const City = () => {
   const { forecastData, isLoading, error } = useForecastData();
+  
   console.log(forecastData);
+  
 
   // Get the forecast for the current day
-  const currentDayForecast = forecastData?.forecastday && forecastData.forecastday[0];
+  const currentDayForecast = forecastData?.forecast && forecastData.forecast.forecastday[0].day;
 
   return (
     <main className="">
@@ -23,8 +25,9 @@ export const City = () => {
           {currentDayForecast ? (
             <div>
               {/* Render minimum and maximum temperatures for the current day */}
-              <p>H: {currentDayForecast.day.maxtemp_c}°C</p>
-              <p>L: {currentDayForecast.day.mintemp_c}°C</p>
+              <div className='flex justify-around'>
+              <p>H: {currentDayForecast.maxtemp_c}°</p> <p>L: {currentDayForecast.mintemp_c}°</p>
+              </div>
             </div>
           ) : (
             <p>No forecast data available for today.</p>
