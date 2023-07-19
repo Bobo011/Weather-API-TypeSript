@@ -2,9 +2,6 @@ import { useForecastData } from '../hooks/';
 
 export const City = () => {
   const { forecastData, isLoading, error } = useForecastData();
-  
-  console.log(forecastData);
-  
 
   // Get the forecast for the current day
   const currentDayForecast = forecastData?.forecast && forecastData.forecast.forecastday[0].day;
