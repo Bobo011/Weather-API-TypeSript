@@ -1,11 +1,21 @@
-import { City, Clouds } from './components';
+import { City, Clouds, WeatherCard } from './components';
 
 const App = () => {
   return (
-    <div className='flex  justify-start flex-col items-center bg-gradient-to-br from-sky-400 via-rose-400 to-lime-400 h-[100vh] w-full'>
-      <div className=" bg-gradient-to-br from-sky-200 py-10 px-10 via-rose-200 to-lime-200 h-[90vh]  w-1/2 flex  item-center rounded flex-col">
+    <div className='flex justify-start flex-col items-center bg-gradient-to-br from-sky-400 via-rose-400 to-lime-400 h-[100vh] w-full'>
+      <div className="mt-5 bg-gradient-to-br from-sky-200 via-rose-200 to-lime-200 h-[95vh] py-10 px-10 w-1/2 flex items-center rounded flex-col">
         <City />
         <Clouds />
+        <div className='grid grid-cols-2 gap-3 mx-auto w-11/12 overflow-auto '>
+          <WeatherCard />
+          <WeatherCard />
+          <WeatherCard />
+          <WeatherCard />
+          <WeatherCard />
+          <WeatherCard />
+          <WeatherCard />
+          <WeatherCard />
+        </div>
       </div>
     </div>
   );
