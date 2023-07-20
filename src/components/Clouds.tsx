@@ -18,13 +18,15 @@ export const Clouds = () => {
     return <p>No forecast data available.</p>;
   }
 
+  const today = new Date().toISOString().slice(0, 10);
+
   return (
     <div>
       {/* Process and display weather data here */}
-      
-      <ul className='flex gap-3'>
+      <ul className='flex justify-around '>
         {forecast.map((dayData: any) => (
-          <li key={dayData.date}>
+          <li className='mt-4 text-center text-2xl' key={dayData.date}>
+            <p>{dayData.date === today ? 'Now' : new Date(dayData.date).getDate()}</p>
             <Cloud />
             {dayData.day.avgtemp_c}°
           </li>

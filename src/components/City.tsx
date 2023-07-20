@@ -13,7 +13,7 @@ export const City = () => {
       ) : error ? (
         <p>{error}</p>
       ) : forecastData ? (
-        <div>
+        <div className='text-center'>
           {/* Process and display weather data here */}
           <p className='text-3xl font-bold'>{forecastData.location.name} <span className='font-thin'>NO</span></p>
           <p className='text-3xl font-bold text-center'>{forecastData.current.temp_c}°C</p>
