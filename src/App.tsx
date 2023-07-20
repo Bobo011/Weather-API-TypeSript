@@ -1,4 +1,5 @@
-import { City, Clouds, WeatherCard } from './components';
+import { City, Clouds } from './components';
+import { SunRise,Sunset } from './components/Sun';
 
 const App = () => {
   return (
@@ -7,14 +8,8 @@ const App = () => {
         <City />
         <Clouds />
         <div className='grid grid-cols-2 gap-3 mx-auto w-11/12 overflow-auto '>
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
+          <SunRise />
+          <Sunset />
         </div>
       </div>
     </div>
