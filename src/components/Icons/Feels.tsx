@@ -1,4 +1,4 @@
-const Feels = (): JSX.Element => (
+export const Feels = (): JSX.Element => (
   <svg
     width="15"
     height="15"
@@ -14,4 +14,4 @@ const Feels = (): JSX.Element => (
   </svg>
 )
 
-export default Feels
+

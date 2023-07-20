@@ -1,4 +1,4 @@
-const Sunrise = (): JSX.Element => (
+export const Sunrise = (): JSX.Element => (
   <svg
     width="20"
     height="20"
@@ -16,4 +16,4 @@ const Sunrise = (): JSX.Element => (
   </svg>
 )
 
-export default Sunrise
+ 

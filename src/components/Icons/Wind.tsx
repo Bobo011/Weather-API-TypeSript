@@ -1,4 +1,4 @@
-const Wind = (): JSX.Element => (
+export const Wind = (): JSX.Element => (
   <svg
     width="15"
     height="15"
@@ -10,4 +10,3 @@ const Wind = (): JSX.Element => (
   </svg>
 )
 
-export default Wind

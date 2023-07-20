@@ -1,4 +1,4 @@
-const Pressure = (): JSX.Element => (
+export const Pressure = (): JSX.Element => (
   <svg
     width="15"
     height="15"
@@ -10,4 +10,4 @@ const Pressure = (): JSX.Element => (
   </svg>
 )
 
-export default Pressure
+

@@ -1,4 +1,4 @@
-const Pop = (): JSX.Element => (
+export const Pop = (): JSX.Element => (
   <svg
     width="15"
     height="12"
@@ -16,4 +16,4 @@ const Pop = (): JSX.Element => (
   </svg>
 )
 
-export default Pop
+ 
