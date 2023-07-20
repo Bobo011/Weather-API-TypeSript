@@ -1,4 +1,5 @@
 import { useForecastData } from '../hooks/';
+import { Cloud } from './Icons';
 
 export const Clouds = () => {
   const { forecastData, isLoading, error } = useForecastData();
@@ -24,6 +25,7 @@ export const Clouds = () => {
       <ul className='flex gap-3'>
         {forecast.map((dayData: any) => (
           <li key={dayData.date}>
+            <Cloud />
             {dayData.day.avgtemp_c}°
           </li>
         ))}
