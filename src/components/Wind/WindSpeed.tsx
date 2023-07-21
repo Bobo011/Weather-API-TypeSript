@@ -18,14 +18,20 @@ export const WindSpeed = () => {
       }
 
    
+  
       
       
-      const sunRise = forecastData.forecast.forecastday[0].astro.sunrise
+      const windSpeed = forecastData.current.wind_kph
+      const windDirection =forecastData.current.wind_dir
+const gustSpeed =forecastData.current.gust_kph
 
   return (
     <MyWeatherCard>
-      <h5 className="mb-2 text-2xl font-bold flex justify-center text-gray-900"><Wind /></h5>
-      <p className="font-normal text-gray-700">{sunRise}</p>
+      <h5 className="mb-2 items-center font-bold flex justify-center gap-1 text-gray-900"><Wind />Wind</h5>
+      <p className="font-normal text-gray-700">{windSpeed} km/h</p>
+      <p className="font-bold text-gray-700">{windDirection}, gusts {gustSpeed} km/h</p>
+
+
     </MyWeatherCard>
   );
 };

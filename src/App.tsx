@@ -1,5 +1,7 @@
 import { City, Clouds } from './components';
 import { SunRise,Sunset } from './components/Sun';
+import {Feels,Humidity,Precipitation,Pressure} from './components/Tempreture'
+import {Visibility,WindSpeed} from './components/Wind'
 
 const App = () => {
   return (
@@ -10,6 +12,13 @@ const App = () => {
         <div className='grid grid-cols-2 gap-3 mx-auto w-11/12 overflow-auto '>
           <SunRise />
           <Sunset />
+          <WindSpeed />
+          <Feels />
+          <Humidity />
+          <Precipitation />
+          <Pressure />
+          <Visibility />
+          
         </div>
       </div>
     </div>
