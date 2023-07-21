@@ -1,3 +1,5 @@
+import path from "path";
+
 export const Pop = (): JSX.Element => (
   <svg
     width="15"
